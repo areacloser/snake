@@ -66,7 +66,7 @@ def moveright(event):
         
 
 def end():
-    win.title("贪吃蛇 V0.9.1 -- By lanlan2_")
+    win.title("贪吃蛇 V0.9.2 -- By lanlan2_")
     can.create_text(250, 200, text="Game Over", fill="lightgrey", font="黑体 32 bold")
     can.create_text(250, 250, text="Score:%d" %score, fill="lightgrey", font="黑体 32 bold")
     
@@ -81,7 +81,7 @@ def update():
         snpos.insert(0, [snpos[0][0], snpos[0][1]])
         food = [randint(0, 49), randint(0, 49)]
         score += 10
-        win.title("贪吃蛇 V0.9.1 -- By lanlan2_        Score:%d" %score)
+        win.title("贪吃蛇 V0.9.2 -- By lanlan2_        Score:%d" %score)
     if way == 1:
         if [snpos[-1][0], snpos[-1][1]-1] not in snpos and snpos[-1][0] >= 0 and snpos[-1][1]-1 >= 0 and snpos[-1][0] <= 49 and snpos[-1][1]-1 <= 49:
             snpos.append([snpos[-1][0], snpos[-1][1]-1])
